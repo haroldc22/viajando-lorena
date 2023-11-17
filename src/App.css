@@ -1,0 +1,548 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'ProximaSoft';
+  src: url(/fonts/ProximaSoft-Bold/ProximaSoft-Bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 9rem;
+}
+
+body{
+  background-color: #f8b75b;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  font-weight: 700;
+}
+
+#logo{
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.nav_menú ul{
+  list-style: none;
+  background-color: black;
+}
+
+.nav_menú ul li{
+  float: left;
+  position: relative;
+}
+.nav_menú ul li a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 20px;
+  font-family: 'ProximaSoft';
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav_menú ul li a:hover{
+  background-color: #f8b75b;
+  color: black;
+}
+
+#toggle,
+.header label{
+  display: none;
+  cursor: pointer;
+}
+
+#foto1{
+  max-width: 38%;
+  max-height: 38%;
+  border-radius: 20px;
+}
+
+.foto_viajemos1,
+.foto_viajemos2,
+.foto_viajemos3,
+.foto_viajemos4{
+  border-radius: 18px;
+}
+
+.sección{
+  background-color: #1E1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3px;
+  padding: 12px 10px;
+  width: 100%;
+}
+
+.sección h1{
+  font-family: 'ProximaSoft';
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.sección h2,
+h3{
+  font-family: 'ProximaSoft';
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sección p{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sección ul{
+  list-style: none;
+}
+
+.texto_1{
+  width: 700px;
+}
+
+.sección ul li{
+  list-style: square;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.f_2{
+  margin-left: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto_viajemos1{
+  max-width: 84%;
+}
+
+.foto_viajemos2{
+  max-width: 24%;
+  max-height: 24%;
+  padding-bottom: 13px;
+  padding-right: 33px;
+}
+
+.fotos_3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fotos_4{
+  display: flex;
+  justify-content: center;
+}
+
+.f_4{
+  float: right;
+}
+
+.foto_viajemos3{
+  max-width: 24%;
+}
+
+.servicios{
+  display: flex;
+}
+
+.titulo_3{
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
+
+#clientes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.foto_viajemos4{
+  max-width: 35%;
+}
+
+.foto_viajemos5{
+  max-width: 32%;
+  max-height: 32%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.texto_2{
+  width: 50%;
+}
+
+.texto_3{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+#contacto{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  justify-content: space-around;
+}
+
+#correo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 12px;
+}
+
+.texto_4,
+.texto_5{
+  width: 60%;
+}
+
+.enlaces{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: 50px;
+}
+
+.bottom{
+  width: 100%;
+}
+
+.footer{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width:768px){
+
+  .header label{
+      display: initial;
+  }
+
+  .header{
+      padding: 20px 10%;
+  }
+
+  .header .nav_menú{
+      position: absolute;
+      top: 80%;
+      left: 0;
+      right: 0;
+      display: none;
+  }
+  .header .nav_menú ul{
+      background-color: black;
+  }
+
+  .header .nav_menú ul li{
+      width: 100%;
+  }
+
+  .header .nav_menú ul li a{
+      padding: 8px 0px 8px 10px;
+      background-color: black;
+      margin-right: 190px;
+  }
+
+  .nav_menú ul li a:hover{
+      background-color: #f8b75b;
+  }
+
+  #toggle:checked ~ .nav_menú{
+      display: block;
+  }
+
+  #logo{
+      max-width: 20%;
+      max-height: 20%;
+  }
+
+  .sección,
+  .fotos_4{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sección p{
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 19px;
+  }
+
+  #sección_1{
+      margin-top: 138px;
+  }
+
+  #foto1{
+      max-width: 58%;
+      max-height: 58%;
+      padding-top: 13px;
+      padding-bottom: 13px;
+  }
+
+  .foto_viajemos1{
+      max-width: 84%;
+      padding-top: 13px;
+  }
+
+  .foto_viajemos2{
+      max-width: 69%;
+      max-height: 69%;
+      padding-top: 13px;
+      padding-left: 12px;
+  }
+
+  .fotos_3{
+      display: flex;
+  }
+
+  .foto_viajemos3{
+      max-width: 26%;
+      max-height: 26%;
+  }
+
+  .texto_2{
+      width: 70%;
+  }
+
+  .texto_3{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 700px;
+      margin: 10px 10px;
+  }
+
+  .f_4{
+      display: flex;
+      padding-top: 13px;
+      justify-content: space-between;
+  }
+
+  .foto_viajemos4{
+      max-width: 48%;
+  }
+
+  .servicios{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .foto_viajemos5{
+      max-height: 60%;
+      max-width: 60%;
+  }
+
+  .body h1,
+  p{
+      text-align: center;
+  }
+
+  #contacto{
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+
+  .enlaces{
+      margin-right: 0px;
+      margin-top: 20px;
+  }
+}
+
+@media(max-width:480px){
+
+  body{
+      overflow-x: hidden;
+  }
+  
+  .header label{
+      display: initial;
+  }
+
+  .header{
+      padding: 20px 10%;
+  }
+
+  .header .nav_menú{
+      position: absolute;
+      top: 80%;
+      left: 0;
+      right: 0;
+      display: none;
+  }
+  .header .nav_menú ul{
+      background-color: black;
+  }
+
+  .header .nav_menú ul li{
+      width: 100%;
+  }
+
+  .header .nav_menú ul li a{
+      padding: 8px 0px 8px 10px;
+      background-color: black;
+      margin-right: 190px;
+  }
+
+  .nav_menú ul li a:hover{
+      background-color: #f8b75b;
+  }
+
+  #toggle:checked ~ .nav_menú{
+      display: block;
+  }
+
+  #logo{
+      max-width: 20%;
+      max-height: 20%;
+  }
+
+  .sección{
+      width: 100%;
+  }
+
+  #sección_1{
+      margin-top: 95px;
+  }
+
+  .sección,
+  .fotos_4{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #foto1{
+      max-width: 80%;
+      max-height: 80%;
+      padding-top: 13px;
+      padding-bottom: 13px;
+  }
+
+  .texto_2,
+  .texto_1,
+  .texto_4,
+  .texto_5{
+      width: 350px;
+  }
+
+  #titulo_2{
+      font-size: 35px;
+  }
+
+  .f_2{
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .foto_viajemos1{
+      max-width: 94%;
+      padding-top: 13px;
+  }
+
+  .foto_viajemos2{
+      max-width: 89%;
+      max-height: 89%;
+      padding-top: 13px;
+      padding-right: 12px;
+  }
+
+  .fotos_3{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .foto_viajemos3{
+      max-width: 49%;
+      padding-top: 4px;
+  }
+
+  .titulo_3{
+      padding-right: 0px;
+      padding-bottom: 0px;
+  }
+
+  .texto_3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 450px;
+      margin: 10px 10px;
+  }
+
+  .f_4{
+      display: flex;
+      padding-top: 13px;
+      justify-content: space-between;
+  }
+
+  .foto_viajemos4{
+      max-width: 49%;
+  }
+
+  .servicios{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .foto_viajemos5{
+      max-height: 90%;
+      max-width: 90%;
+  }
+
+  .foto_viajemos1,
+  .foto_viajemos2{
+  border-radius: 20px;
+}
+
+  .body h1,
+  p{
+      text-align: center;
+  }
+
+  #contacto{
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+
+  .enlaces{
+      margin-right: 0px;
+      margin-top: 20px;
+  }
+}
